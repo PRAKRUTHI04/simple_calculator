@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>calculator</title>
+<style>
+.button{
+background-color:green;
+color:white;
+border:none;
+font-size:16px;
+display:inline-block;
+}
+</style>
+<script src="calculator.js" type='text/Javascript'>
+</script>
+</head>
+<body>
+<h1>My Calculator</h1>
+<table border="1" cellpadding="5" cellspacing="5" width="600">
+<tr align="center">
+<td>first number</td>
+<td>second number</td>
+<td>result</td>
+</tr>
+<tr align="center">
+<td><input type="text" name="number1" id='num1'/></td>
+<td><input type="text" name="number2" id='num2'/></td>
+<td><input type="text" name="result" id='result' onclick="this.blur()"></td>
+</tr>
+<tr><td colspan="3">
+<button class="button" onclick="showresult('1')">+</button>
+<button class="button" onclick="showresult('2')">-</button>
+<button class="button" onclick="showresult('3')">*</button>
+<button class="button" onclick="showresult('4')">/</button>
+<button class="button" value="CLEAR ALLL" onclick="cls()"/>CLEAR</button></td>
+</tr>
+</table>
+</body>
+</html>
